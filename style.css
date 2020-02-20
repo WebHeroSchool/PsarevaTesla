@@ -84,13 +84,23 @@ h1 {
 }
 
 
-@media (max-width:961px) {
+@media (max-width:768px) {
     .header__models {
         display: none;
     }
 
     .header__item {
         display: none;
+    }
+
+    .header {
+        padding: 0 16px 0 15px;
+        margin-bottom: 53px;
+    }
+
+    .menu-burger__pic {
+        width: 35.23px;
+        height: 22.02px;
     }
 }
 
@@ -121,14 +131,19 @@ h1 {
 
 .picture {
     padding-right: 74px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     background-image: url('./pic/watermark.png');
+    /* background-repeat: no-repeat; */
     background-position: 50% 840%;
+    /* background-size: 100% auto; */
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .picture__tesla {
     display: block;
     margin: auto;
+    max-width: 100%;
 }
 
 .row {
@@ -136,7 +151,7 @@ h1 {
     justify-content: center;
     align-items: center;
     padding-right: 4px;
-    margin-bottom: 26px;
+    margin-bottom: 23px;
 }
 
 .row__about {
@@ -151,26 +166,53 @@ h1 {
 }
 
 .info__text-wrap {
-    padding-bottom: 3px;
+    /* padding-bottom: 3px; */
+    position: relative;
+    left: 15px;
+    bottom: 8px;
 }
+
+.info__text-wrap_second {
+    /* padding-bottom: 3px; */
+    position: relative;
+    right: 15px;
+}
+
 
 .info.one {
     margin-right: 72px;
+
 }
 
 .info.two {
     padding-left: 3px;
     margin-right: 6px;
+    position: relative;
+    left: 16px;
+    bottom: 11px;
 }
 
+/* .info__picture {
+    width: 50px;
+    height: 50px;
+
+} */
+
 .info__picture.time {
-    margin-right: 10px;
-    padding-top: 5px;
+    width: 46px;
+    height: 34.13px;
+    padding-right: 4px;
+    padding-top: 15px;
+    background: url('./pic/time.png') no-repeat;
 } 
 
 .info__picture.path {
-    padding-right: 12px;
-    padding-top: 11px;
+    background: url('./pic/path.png') no-repeat;
+    width: 26.4px;
+    height: 62.37px;
+    padding-right: 39px;
+    position: relative;
+    top: 10px;
 }
 
 .info__title {
@@ -192,6 +234,7 @@ h1 {
 
 .marketing {
     display: flex;
+    padding-bottom: 12px;;
 }
 
 .test-drive {
@@ -201,6 +244,7 @@ h1 {
 }
 
 .test-drive__icon {
+    background: url('./pic/steering-wheel.png');
     margin-right: 7px;
     display: block;
     width: 22px;
@@ -239,4 +283,116 @@ h1 {
     bottom: 93px;
     left: 48.8%; */
     
+}
+
+@media (max-width:768px) {
+    .picture__tesla {
+        max-width: 700px;
+    }
+
+    .top__header {
+        margin-bottom: 65px;
+    }
+
+    .picture {
+        /* padding-left: 30px; */
+        margin-bottom: 48px;
+        padding-right: 0;
+        max-width: 100%
+    }
+
+    .row {
+        flex-direction: column;
+        padding-left: 27px;
+        margin-bottom: 48px;
+    }
+
+    .info__picture.time {
+        width: 77px;
+    }
+
+    .info__picture.path {
+        width: 43.71px;
+        height: 71.66px;
+        background: url('./pic/road.png') no-repeat;
+        position: relative;
+        right: 7px;
+        top: 9px;
+    }
+
+    .info__picture.time {
+        width: 65.92px;
+        height: 48.91px;
+        padding-right: 4px;
+        padding-top: 15px;
+        background: url('./pic/speed.png') no-repeat;
+    } 
+    
+    .info__title span {
+        font-size: 50px;
+        line-height: 61px;
+        position: relative;
+        top: 7px;
+    }
+
+    .info__title {
+        position: relative;
+        bottom: 7px;
+    }
+
+    .info__text-wrap {
+        position: relative;
+        left: 18px;   
+    }
+
+    .info__text-wrap_second{
+        right: 29px;   
+    }
+
+    /* .info.two {
+        padding-left: 3px;
+        margin-right: 6px;
+        position: relative;
+        left: 70px;
+        bottom: 11px;
+    } */
+
+    .row__about {
+        margin-right: 20px;
+        margin-bottom: 51px;
+    }
+
+    .info.one {
+        margin-right: 92px;
+    }
+
+    .test-drive {
+        margin-right: 64px;
+    }
+
+    .test-drive__text {
+        font-size: 16px;
+        line-height: 20px;
+        color: #E51937;
+        padding-top: 4px;
+    }
+
+    .test-drive__icon {
+        width: 32px;
+        height: 32px;
+        background: url('./pic/wheel_red.png');
+        color: #E51937;
+        margin-right: 15px;
+    }
+
+    .order-button {
+        width: 220.84px;
+        height: 55.21px;
+        background: #E51937;
+        color: #fff;
+        font-size: 16px;
+        line-height: 20px;
+        position: relative;
+        right: 23px;
+    }
 }
