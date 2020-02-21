@@ -107,6 +107,10 @@ h1 {
 
 /* Стили для первой секции top */
 
+.top {
+    margin-bottom: 34px;
+}
+
 .top__title {
     font-weight: 600;
     font-size: 90px;
@@ -171,7 +175,7 @@ h1 {
 .info__text-wrap_second {
     /* padding-bottom: 3px; */
     position: relative;
-    right: 15px;
+    right: 17px;
 }
 
 
@@ -230,7 +234,12 @@ h1 {
 
 .marketing {
     display: flex;
-    padding-bottom: 12px;;
+    margin-bottom: 13px;
+}
+
+.more {
+    display: flex;
+    margin-bottom: 0px;
 }
 
 .test-drive {
@@ -252,7 +261,7 @@ h1 {
     font-weight: 700;
     font-size: 13px;
     line-height: 16px;
-    text-align: center;
+    /* text-align: center; */
     text-transform: uppercase;
 }
 
@@ -280,6 +289,154 @@ h1 {
     left: 48.8%; */
     
 }
+
+
+
+/* Стили для 2 секции feature */
+
+.feature {
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-model {
+    background: #E51937;
+    width: 387px;
+    color: #fff;
+    padding: 51px 0px 63px 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.model-name {
+    background: url('./pic/panel.png') no-repeat;
+    background-position: 0% 100%;
+    flex: 1;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 85px;
+    color: #E51937;
+    padding: 65px 0 0 80px;
+}
+
+.description {
+    width: 316px;
+    margin-bottom: 61px;
+}
+
+.description__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 12px; 
+}
+
+.description__text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail__item:nth-child(2) {
+    margin-bottom: 27px;
+}
+
+.detail__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 9px;
+    width: 173px;
+}
+
+.detail__title span {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+}
+
+.detail__text {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.detail__text.special {
+    padding-top: 5px;
+}
+
+.detail__item {
+    display: flex;
+    margin-bottom: 22px;
+}
+
+.marketing.test-drive__text {
+    color: #fff;
+}
+
+.about-model__row {
+    position: relative;
+    right: 3px;
+}
+
+.detail__picture {
+    padding-top: 10px;
+    margin-right: 22px;
+    width: 36px;
+    height: 52px;
+}
+
+.detail__picture.wifi {
+    width: 44px;
+    height: 34px;
+    padding-top: 33px;
+    margin-right: 16px;
+}
+
+.know-more {
+    color: #fff;
+    margin-right: 31px;
+    display: flex;
+    align-items: center;
+}
+
+.know-more__text {
+    color: #fff;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 0px;
+}
+
+.know-more__pic {
+    margin-right: 10px;
+}
+
+.marketing__button {
+    width: 160px;
+    height: 40px;
+    border: 2px solid #fff;
+    background: #E51937;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
 
 @media (max-width:1439px) {
     .top {
