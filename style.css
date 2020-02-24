@@ -413,7 +413,6 @@ h1 {
         display: none;
     }
 
-    
     .header__picture {
         width: 138px;
         height: 42px;
@@ -431,7 +430,8 @@ h1 {
 
     .header {
         height: 51px;
-        padding: 0 21px 0 2px;
+        padding: 0;
+        margin: 0 23px 25px 0;
     }
 
     .top__title {
@@ -439,16 +439,13 @@ h1 {
         line-height: 61px;
     }
 
-    .header {
-        margin-bottom: 25px;
-    }
-
     .top {
         padding-left: 0;
     }
 
     .top__header {
-        margin-bottom: 0;
+        margin-bottom: 2px;
+        padding-right: 4px;
     }
 
     .top__slogan {
@@ -460,9 +457,9 @@ h1 {
     .picture {
         margin-bottom: 0;
         background: url('./pic/watermark_small.png') no-repeat;
-        background-position: 50% 0%;
+        background-position: 50% 17%;
         height: 212px;
-        padding-left: 9px;
+        padding-left: 7px;
     }
 
     .picture__tesla {
@@ -493,7 +490,7 @@ h1 {
     .info__title {
         font-size: 15px;
         line-height: 18px;
-        padding-top: 7px;
+        padding-top: 4px;
     }
 
     .info__text {
@@ -502,17 +499,17 @@ h1 {
     }
 
     .info.one {
-        margin-right: 43px;
+        margin-right: 33px;
     }
 
     .info.two {
-        left: 23px;
+        left: 31px;
     }
 
     .info__text-wrap {
         position: relative;
-        top: 0;
-        right: 0;
+        top: 0px;
+        right: 0px;
     }
 
     .info__text-wrap_second {
@@ -526,32 +523,36 @@ h1 {
         font-weight: 600;
         width: 160px;
         height: 40px;
+        position: relative;
+        right: 17px;
     }
 
     .test-drive__text {
         font-size: 13px;
         line-height: 16px;
+        padding-top: 0;
     }
 
     .test-drive__icon {
         width: 23px;
         height: 22px;
         background: url('./pic/small_wheel.png') no-repeat;
-        margin-right: 7px;
+        margin-right: 4px;
     }
 
     .test-drive {
-        margin-right: 47px;
-        position: relative;
-        bottom: 4px;
+        margin-right: 42px;
+        padding-left: 6px;
     }
 
     .row__about {
-        margin-bottom: 41px;
+        margin-bottom: 42px;
+        padding-left: 5px;
     }
 
     .row {
-        margin-bottom: 13px;
+        margin-bottom: 16px;
+        padding-left: 10px;
     }
 
 }
