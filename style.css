@@ -550,11 +550,11 @@ h1 {
     }
 
 
-/* Секция feature */
+/* Секция feature средний размер*/
 
     .feature {
         /* flex-direction: column; */
-        max-height: 100%;
+        height: 100%;
         max-width: 100%;
         display: block;
     }
@@ -569,18 +569,50 @@ h1 {
 
     .about-model {
         width: 100%;
+        padding: 54px 0px 68px 35px;
     }
 
     .about-model__top {
         max-width: 100%;
         display: flex;
-        /* flex-direction: row; */
         justify-content: space-between;
+        margin-bottom: 5px;
     }
 
-    /* .description {
-        width: 330px;
-    } */
+    .know-more__text {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .marketing__button {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        width: 220px;
+        height: 55px;
+    }
+
+    .description__title {
+        margin-bottom: 23px;
+    }
+
+    .detail {
+        padding-right: 116px;
+    }
+
+    .detail__item {
+        margin-bottom: 9px;
+    }
+
+    .detail__item:nth-child(2) {
+        margin-bottom: 21px;
+    }
+
+    .about-model__row {
+        display: flex;
+        justify-content: center;
+    }
 
 }
 
@@ -734,4 +766,19 @@ h1 {
         margin-bottom: 13px;
     }
 
+
+    /* Секция feature для маленького размера */
+
+    .model-name {
+        height: 337px;
+        background: url('./pic/small_panel.png') no-repeat;
+    }
+
+    .detail {
+        display: none;
+    }
+
+    .about-model__bottom {
+        display: none;
+    }
 }
