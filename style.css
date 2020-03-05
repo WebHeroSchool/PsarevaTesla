@@ -37,7 +37,7 @@ h1 {
 }
 
 .header__logo {
-    margin-right: 36px;
+    margin-right: 40px;
 }
 
 .header__models {
@@ -65,30 +65,17 @@ h1 {
     display: block;
     height: 26px;
     max-width: 100%;
+    margin-right: 37px;
 }
 
 .header__model.one {
-    margin-right: 63.14px;
     color: #E51937;
     background: url('./pic/line.png') no-repeat;
     background-position: bottom;
-
-}
-
-.header__model.two {
-    margin-right: 24.86px;
-}
-
-.header__model.three {
-    margin-right: 44px;
-}
-
-.header__model.four {
-    margin-right: 46px;
 }
 
 
-@media (max-width:1439px) {
+@media (max-width:1023px) {
     .header__models {
         display: none;
     }
@@ -130,20 +117,14 @@ h1 {
 }
 
 .picture {
-    padding-right: 74px;
-    margin-bottom: 35px;
-    background-image: url('./pic/watermark.png');
-    background-repeat: no-repeat;
-    background-position: 50% 840%;
-    /* background-size: 100% auto; */
-    max-width: 100%;
-    max-height: 100%;
+    margin: auto;
 }
 
 .picture__tesla {
     display: block;
     margin: auto;
-    max-width: 100%;
+    width: 100%;
+    margin-bottom: 35px;
 }
 
 .row {
@@ -191,12 +172,6 @@ h1 {
     left: 16px;
     bottom: 11px;
 }
-
-/* .info__picture {
-    width: 50px;
-    height: 50px;
-
-} */
 
 .info__picture.time {
     width: 46px;
@@ -285,31 +260,17 @@ h1 {
     
 }
 
-@media (max-width:1439px) {
+@media (max-width:1023px) {
     .top {
         padding-left: 16px;
     }
-    
-    .picture__tesla {
-        max-width: 700px;
-        display: block;
-    }
 
     .top__header {
-        margin-bottom: 31px;
+        margin-bottom: 25px;
     }
 
-    .picture {
-        padding-left: 18px;
-        margin-bottom: 15px;
-        padding-bottom: 0px;
-        max-width: 100%;
-        height: 393px;
-        background-image: url('./pic/watermark_middle.png');
-        background-repeat: no-repeat;
-        background-position: 50% 0%;
-        display: flex;
-        align-items: flex-end;
+    .picture__tesla {
+        margin-bottom: 43px;
     }
 
     .row {
@@ -359,14 +320,6 @@ h1 {
     .info__text-wrap_second{
         right: 29px;   
     }
-
-    /* .info.two {
-        padding-left: 3px;
-        margin-right: 6px;
-        position: relative;
-        left: 70px;
-        bottom: 11px;
-    } */
 
     .row__about {
         margin-right: 20px;
@@ -458,20 +411,6 @@ h1 {
         padding-top: 22px;
     }
 
-    .picture {
-        margin-bottom: 0;
-        background: url('./pic/watermark_small.png') no-repeat;
-        background-position: 50% 17%;
-        height: 212px;
-        padding-left: 7px;
-    }
-
-    .picture__tesla {
-        width: 357px;
-        height: 166px;
-        display: block;
-    }
-
     .info__picture.time {
         width: 38px;
         height: 28px;
@@ -522,11 +461,9 @@ h1 {
     }
 
     .order-button {
-        font-size: 13px;
-        line-height: 16px;
-        font-weight: 600;
         width: 160px;
         height: 40px;
+        font-weight: 600;
         position: relative;
         right: 17px;
     }
