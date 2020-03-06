@@ -26,7 +26,7 @@ h1 {
 .header {
     max-width: 100%;
     height: 102px;
-    padding: 0 58px 0 42px;
+    padding: 0 43px 0 42px;
     margin-bottom: 31px;
     display: flex;
     justify-content: space-between;
@@ -75,28 +75,15 @@ h1 {
 }
 
 
-@media (max-width:1023px) {
-    .header__models {
-        display: none;
-    }
+/* Стили для первой секции top */
 
-    .header__item {
-        display: none;
-    }
-
-    .header {
-        padding: 0 16px 0 15px;
-        margin-bottom: 53px;
-    }
-
-    .menu-burger__pic {
-        width: 35.23px;
-        height: 22.02px;
-    }
+.top {
+    padding-left: 16px;
 }
 
-
-/* Стили для первой секции top */
+.top__header {
+    margin-bottom: 15px;
+}
 
 .top__title {
     font-weight: 600;
@@ -110,10 +97,8 @@ h1 {
     font-size: 15px;
     line-height: 18px;
     text-align: center;
-    position: relative;
-    bottom: 24px;
     margin: 0;
-    padding-top: 15px;
+    padding-top: 0;
 }
 
 .picture {
@@ -124,21 +109,25 @@ h1 {
     display: block;
     margin: auto;
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
 }
 
 .row {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 4px;
     margin-bottom: 23px;
 }
 
 .row__about {
     display: flex;
     justify-content: center;
-    margin-right: 99px;
+    margin-right: 105px;
+}
+
+.row__order {
+    display: flex;
+    align-items: center;
 }
 
 .info {
@@ -146,48 +135,25 @@ h1 {
     align-items: center;
 }
 
-.info__text-wrap {
-    /* padding-bottom: 3px; */
-    position: relative;
-    left: 15px;
-    bottom: 8px;
-}
-
-.info__text-wrap_second {
-    /* padding-bottom: 3px; */
-    position: relative;
-    right: 15px;
-}
-
-
 .info.one {
-    margin-right: 72px;
+    margin-right: 80px;
 
-}
-
-.info.two {
-    padding-left: 3px;
-    margin-right: 6px;
-    position: relative;
-    left: 16px;
-    bottom: 11px;
 }
 
 .info__picture.time {
     width: 46px;
-    height: 34.13px;
-    padding-right: 4px;
-    padding-top: 15px;
+    height: 34px;
+    padding: 15px 4px 0 0;
+    margin-right: 15px;
     background: url('./pic/time.png') no-repeat;
 } 
 
 .info__picture.path {
     background: url('./pic/path.png') no-repeat;
-    width: 26.4px;
-    height: 62.37px;
-    padding-right: 39px;
-    position: relative;
-    top: 10px;
+    width: 26px;
+    height: 62px;
+    padding-right: 12px;
+    margin-right: 10px;
 }
 
 .info__title {
@@ -209,11 +175,11 @@ h1 {
 
 .marketing {
     display: flex;
-    padding-bottom: 12px;;
+    padding-bottom: 12px;
 }
 
 .test-drive {
-    margin-right: 40px;
+    margin-right: 45px;
     display: flex;
     align-items: center;
 }
@@ -241,7 +207,7 @@ h1 {
     background: #fff;
     border: 2px solid #E51937;
     font-family: 'Montserrat';
-    font-weight: 700;
+    font-weight: 600;
     font-size: 13px;
     line-height: 16px;
     text-transform: uppercase;
@@ -253,85 +219,73 @@ h1 {
     margin: auto;
 }
 
-.arrow {
-    /* position: relative;
-    bottom: 93px;
-    left: 48.8%; */
-    
-}
-
 @media (max-width:1023px) {
+    .header__models {
+        display: none;
+    }
+
+    .header__item {
+        display: none;
+    }
+
+    .header {
+        padding: 0 16px 0 15px;
+        margin-bottom: 53px;
+    }
+
+    .menu-burger__pic {
+        width: 35.23px;
+        height: 22.02px;
+    }
+   
     .top {
         padding-left: 16px;
     }
 
     .top__header {
-        margin-bottom: 25px;
+        margin-bottom: 40px;
     }
 
     .picture__tesla {
-        margin-bottom: 43px;
+        margin-bottom: 35px;
     }
 
     .row {
         flex-direction: column;
-        padding-left: 27px;
         margin-bottom: 48px;
     }
 
-    .info__picture.time {
-        width: 77px;
-    }
-
     .info__picture.path {
-        width: 43.71px;
-        height: 71.66px;
+        width: 44px;
+        height: 72px;
+        padding: 5px 16px 0 0;
+        margin-right: 0;
         background: url('./pic/road.png') no-repeat;
-        position: relative;
-        right: 7px;
-        top: 9px;
     }
 
     .info__picture.time {
-        width: 65.92px;
-        height: 48.91px;
-        padding-right: 4px;
-        padding-top: 15px;
+        width: 66px;
+        height: 49px;
+        padding: 5px 20px 0 0;
+        margin-right: 0;
         background: url('./pic/speed.png') no-repeat;
     } 
     
     .info__title span {
         font-size: 50px;
         line-height: 61px;
-        position: relative;
-        top: 7px;
-    }
-
-    .info__title {
-        position: relative;
-        bottom: 7px;
-    }
-
-    .info__text-wrap {
-        position: relative;
-        left: 18px;   
-    }
-
-    .info__text-wrap_second{
-        right: 29px;   
     }
 
     .row__about {
-        margin-right: 20px;
-        margin-bottom: 51px;
+        margin: 0 15px 58px 0;
     }
 
     .info.one {
-        margin-right: 92px;
+        margin-right: 90px;
     }
 
     .test-drive {
-        margin-right: 64px;
+        margin-right: 40px;
     }
 
     .test-drive__text {
@@ -356,8 +310,6 @@ h1 {
         color: #fff;
         font-size: 16px;
         line-height: 20px;
-        position: relative;
-        right: 23px;
     }
 }
 
@@ -388,7 +340,7 @@ h1 {
     .header {
         height: 51px;
         padding: 0;
-        margin: 0 23px 25px 0;
+        margin: 0 5px 25px 0;
     }
 
     .top__title {
@@ -401,20 +353,23 @@ h1 {
     }
 
     .top__header {
-        margin-bottom: 2px;
-        padding-right: 4px;
+        margin-bottom: 45px;
+        padding-left: 18px;
     }
 
     .top__slogan {
         font-size: 10px;
         line-height: 12px;
-        padding-top: 22px;
+    }
+
+    .picture__tesla {
+        margin-bottom: 22px;
     }
 
     .info__picture.time {
         width: 38px;
         height: 28px;
-        padding-right: 0;
+        padding-right: 15px;
         padding-top: 0;
         background: url('./pic/small_time.png') no-repeat;
     }
@@ -422,6 +377,7 @@ h1 {
     .info__picture.path {
         width: 26px;
         height: 41px;
+        padding: 0 10px 0 0;
         background: url('./pic/small_path.png') no-repeat;
     }
 
@@ -442,30 +398,14 @@ h1 {
     }
 
     .info.one {
-        margin-right: 33px;
-    }
-
-    .info.two {
-        left: 31px;
-    }
-
-    .info__text-wrap {
-        position: relative;
-        top: 0px;
-        right: 0px;
-    }
-
-    .info__text-wrap_second {
-        right: 33px;
-        top: 10px;
+        margin-right: 35px;
     }
 
     .order-button {
-        width: 160px;
+        width: 140px;
         height: 40px;
-        font-weight: 600;
-        position: relative;
-        right: 17px;
+        font-size: 13px;
+        line-height: 16px;
     }
 
     .test-drive__text {
@@ -478,22 +418,29 @@ h1 {
         width: 23px;
         height: 22px;
         background: url('./pic/small_wheel.png') no-repeat;
-        margin-right: 4px;
+        margin-right: 7px;
     }
 
     .test-drive {
-        margin-right: 42px;
-        padding-left: 6px;
+        margin-right: 25px;
     }
 
     .row__about {
-        margin-bottom: 42px;
-        padding-left: 5px;
+        /* margin: 0 0 43px */
+        margin-bottom: 43px;
+        padding-left: 15px;
     }
 
-    .row {
-        margin-bottom: 16px;
+    .row__order {
         padding-left: 10px;
     }
 
+    .row {
+        margin-bottom: 17px;
+        padding-left: 0;
+    }
+
+    .arrow {
+        padding-left: 20px;
+    }
 }
