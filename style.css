@@ -225,6 +225,8 @@ h1 {
     margin: auto;
 }
 
+
+
 @media (max-width:1023px) {
     .header__models {
         display: none;
