@@ -38,6 +38,12 @@ h1 {
 
 .header__logo {
     margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.header__picture {
+    display: block;
 }
 
 .header__models {
