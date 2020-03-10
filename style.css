@@ -84,8 +84,24 @@ h1 {
 }
 
 
-@media (max-width:1023px) {
-    
+@media (max-width:1439px) {
+    .header__models {
+        display: none;
+    }
+
+    .header__item {
+        display: none;
+    }
+
+    .header {
+        padding: 0 33px 0 15px;
+        margin-bottom: 53px;
+    }
+
+    .menu-burger__pic {
+        width: 35.23px;
+        height: 22.02px;
+    }
 }
 
 
@@ -423,9 +439,6 @@ h1 {
 
 
 @media (max-width:1439px) {
-    .top {
-        padding-left: 16px;
-    }
     
     .picture__tesla {
         max-width: 700px;
@@ -437,8 +450,8 @@ h1 {
     }
 
     .picture {
-        padding-left: 18px;
-        margin-bottom: 15px;
+        padding-left: 35px;
+        margin-bottom: 14px;
         padding-bottom: 0px;
         max-width: 100%;
         height: 393px;
@@ -497,14 +510,6 @@ h1 {
         right: 29px;   
     }
 
-    /* .info.two {
-        padding-left: 3px;
-        margin-right: 6px;
-        position: relative;
-        left: 70px;
-        bottom: 11px;
-    } */
-
     .row__about {
         margin-right: 20px;
         margin-bottom: 51px;
@@ -543,6 +548,72 @@ h1 {
         position: relative;
         right: 23px;
     }
+
+
+/* Секция feature средний размер*/
+
+    .feature {
+        /* flex-direction: column; */
+        height: 100%;
+        max-width: 100%;
+        display: block;
+    }
+
+    .model-name {
+        height: 493px;
+        text-align: right;
+        padding: 35px 47px 0 0px;
+        background: url(./pic/middle_panel.png) no-repeat;
+        background-position: 49% 98%;
+    }
+
+    .about-model {
+        width: 100%;
+        padding: 54px 0px 68px 35px;
+    }
+
+    .about-model__top {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+
+    .know-more__text {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .marketing__button {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        width: 220px;
+        height: 55px;
+    }
+
+    .description__title {
+        margin-bottom: 23px;
+    }
+
+    .detail {
+        padding-right: 116px;
+    }
+
+    .detail__item {
+        margin-bottom: 9px;
+    }
+
+    .detail__item:nth-child(2) {
+        margin-bottom: 21px;
+    }
+
+    .about-model__row {
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 @media (max-width:767px) {
@@ -695,4 +766,19 @@ h1 {
         margin-bottom: 13px;
     }
 
+
+    /* Секция feature для маленького размера */
+
+    .model-name {
+        height: 337px;
+        background: url('./pic/small_panel.png') no-repeat;
+    }
+
+    .detail {
+        display: none;
+    }
+
+    .about-model__bottom {
+        display: none;
+    }
 }
