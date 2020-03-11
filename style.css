@@ -237,7 +237,7 @@ h1 {
     }
 
     .header {
-        padding: 0 16px 0 15px;
+        padding: 0 33px 0 15px;
         margin-bottom: 53px;
     }
 
@@ -347,8 +347,8 @@ h1 {
 
     .header {
         height: 51px;
-        padding: 0;
-        margin: 0 5px 25px 0;
+        padding: 0 20px 0 2px;;
+        margin-bottom: 25px;
     }
 
     .top__title {
