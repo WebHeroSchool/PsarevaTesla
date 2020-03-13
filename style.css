@@ -573,11 +573,107 @@ h1 {
     line-height: 20px;
   }
 
-  .more {
-      padding-
-  }
 
+/* Стили для третьей секции safety для планшета */
 
+.safety {
+  flex-direction: column;
+}
+
+.safety-info {
+  order: 1;
+}
+
+.scheme {
+  height: 538px;
+}
+
+.scheme__model-name {
+  font-size: 148px;
+  line-height: 180px;
+  padding: 38px 0 0 82px;
+}
+
+.picture__scheme {
+  position: relative;
+  bottom: 137px;
+  right: 10px;
+  width: 100%;
+  height: 78%;
+}
+
+.summary-grade {
+  display: none;
+}
+
+.safety-info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 63px 20px 65px 34px;
+}
+
+.safety-order {
+  /* width: 100%; */
+}
+
+.description.mod {
+  width: 46%;
+  margin-right: 67px;
+}
+
+.description.mod .description__title {
+  margin-bottom: 13px;
+}
+
+.grade {
+  /* width: 40%; */
+}
+
+.grade .description__title {
+  margin-bottom: 26px;
+}
+
+.grade__name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-right: 33px;
+}
+
+.grade__name span {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.grade__mark {
+  display: flex;
+  flex-direction: column;
+}
+
+.grade__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
+.marketing {
+  margin: auto;
+}
+
+.safety.more {
+  padding-top: 20px;
+}
+
+.safety .more {
+  padding-top: 57px;
+  margin: auto;
+}
+
+.safety .know-more {
+  padding-left: 0;
+}
 }
 
 
