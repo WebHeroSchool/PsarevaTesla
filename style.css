@@ -261,7 +261,7 @@ h1 {
   .detail__title {
     font-weight: 600;
     font-size: 20px;
-    line-height: 9px;
+    line-height: 20px;
   }
 
   .detail__title span {
@@ -313,7 +313,7 @@ h1 {
 
   .detail__item {
     display: flex;
-    margin-bottom: 22px;
+    margin-bottom: 35px;
   }
 
   .detail__picture {
@@ -326,7 +326,7 @@ h1 {
   .detail__picture.wifi {
     width: 44px;
     height: 34px;
-    padding-top: 33px;
+    padding-top: 20px;
     margin-right: 16px;
   }
 
@@ -339,20 +339,17 @@ h1 {
 @media (min-width: 1024px) {
   .feature {
     height: 900px;
-    max-width: 1720px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1fr;  
   }
 
   .feature__background {
     background: url("./pic/panel-big.png") no-repeat;
     background-position: bottom left;
     height: 100%;
-    flex: 1;
   }
 
   .about-model {
-    width: 25%;
     min-width: 350px;
     padding: 51px 18px 63px 50px;
     justify-content: space-between;
@@ -363,8 +360,8 @@ h1 {
   }
 
   .description {
-    width: 316px;
-    margin-bottom: 61px;
+    /* width: 316px; */
+    margin-bottom: 80px;
   }
 
   .description__title {
@@ -516,7 +513,7 @@ h1 {
 
   .about-model__top {
       display: flex;
-      margin-bottom: 60px;
+      margin-bottom: 45px;
   }
 
   .description {
@@ -529,7 +526,7 @@ h1 {
   }
 
   .detail__item {
-      margin-bottom: 10px;
+      margin-bottom: 30px;
   }
 
   .detail__title {
@@ -602,7 +599,7 @@ h1 {
 
   .top {
     padding-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .top__header {
@@ -706,9 +703,29 @@ h1 {
 .feature__background {
     background: url('./pic/panel-moddle.png') no-repeat;
     background-size: cover;
-    background-position: 0% 100%; 
-    height: 322px;
+    background-position: 38% 100%; 
+    height: 312px;
 }
 
+.about-model__bottom, .detail {
+  display: none;
+}
+
+.description {
+  max-width: 100%;
+  margin-right: 0;
+}
+
+.about-model {
+  padding: 18px 10px 41px 25px;
+}
+
+.about-model__top {
+  margin-bottom: 0;
+}
+
+.description__title {
+  margin-bottom: 10px;
+}
 
 }
