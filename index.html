@@ -208,12 +208,23 @@
         </div>
         <div class="scheme">
           <div class="scheme__model-name">Model S</div>
-          <div class="scheme__picture">
-            <img src="./pic/car-frame.png" alt="" />
-          </div>
-          <div class="web-hero">
+          <!-- <div class="scheme__picture"> -->
+            <picture class="picture">
+              <source srcset="./pic/scheme-small.svg" media="(max-width: 767px)" />
+              <source srcset="./pic/car-mobile.png" media="(max-width: 1023px)" />
+              <img src="./pic/car.png" alt="Tesla" class="picture__scheme" />
+            </picture>
+
+
+            <!-- <img src="./pic/car-frame.png" alt="" />
+          </div> -->
+          <!-- <div class="web-hero">
             <img src="./pic/web-hero.png" alt="" class="web-hero__logo" />
-          </div>
+          </div> -->
+
+ 
+
+
         </div>
       </section>
     </main>
