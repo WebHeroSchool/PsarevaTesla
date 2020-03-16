@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -102,9 +103,9 @@ h1 {
   padding-top: 0;
 }
 
-.picture {
+/* .picture {
   margin: auto;
-}
+} */
 
 .picture__tesla {
   display: block;
@@ -222,151 +223,165 @@ h1 {
 /* Стили для 2 секции feature */
 
 .feature {
-    margin: auto;
+  margin: auto;
 }
 
-.feature__background {
-    background: url("./pic/panel-moddle.png") no-repeat;
-    background-position: bottom left;
-    background-size: cover;
-    height: 500px;
-  }
 
-  .model-name {
-    font-weight: 600;
-    font-size: 70px;
-    line-height: 85px;
-    color: #e51937;
-  }
+.feature__picture {
+  width: 100%;
+  display: block;
+}
+
+.model-name {
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 85px;
+  color: #e51937;
+}
 
 .about-model {
-    background: #e51937;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
+  background: #e51937;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 .description__title {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 37px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
 }
 
 .description__text {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-  }
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
 
-  .detail__title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
-  }
+.detail__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
 
-  .detail__title span {
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 43px;
-  }
+.detail__title span {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 43px;
+}
 
-  .detail__text {
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
-  }
+.detail__text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
 
-  .marketing__button {
-    width: 220px;
-    height: 55px;
-    border: 2px solid #fff;
-    background: #e51937;
-    color: #fff;
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
-  }
+.marketing__button {
+  width: 220px;
+  height: 55px;
+  border: 2px solid #fff;
+  background: #e51937;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-  .know-more {
-    color: #fff;
-    margin-right: 31px;
-    display: flex;
-    align-items: center;
-  }
+.know-more {
+  color: #fff;
+  margin-right: 31px;
+  display: flex;
+  align-items: center;
+}
 
-  .know-more__text {
-    color: #fff;
-    font-size: 13px;
-    line-height: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-right: 0px;
-  }
+.know-more__text {
+  color: #fff;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 0px;
+}
 
-  .detail {
-    display: flex;
-    flex-direction: column;
-  }
+.detail {
+  display: flex;
+  flex-direction: column;
+}
 
-  .detail__item {
-    display: flex;
-    margin-bottom: 35px;
-  }
+.detail__item {
+  display: flex;
+  margin-bottom: 35px;
+}
 
-  .detail__picture {
-    padding-top: 10px;
-    margin-right: 22px;
-    width: 36px;
-    height: 52px;
-  }
+.detail__picture {
+  padding-top: 10px;
+  margin-right: 22px;
+  width: 36px;
+  height: 52px;
+}
 
-  .detail__picture.wifi {
-    width: 44px;
-    height: 34px;
-    padding-top: 20px;
-    margin-right: 16px;
-  }
+.detail__picture.wifi {
+  width: 44px;
+  height: 34px;
+  padding-top: 20px;
+  margin-right: 16px;
+}
 
-  .more {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+.more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+/* Общие стили для секции safety */
 
-  /* Общие стили для секции safety */
+.safety {
+  display: flex;
+}
 
-  .safety {
-    display: flex;
-  }
+.safety-info {
+  background: #e51937;
+  color: white;
+}
 
-  .safety-info {
-    background: #E51937;
-    color: white;
-  }
-
-  .scheme__model-name {
-    font-weight: 600;
-    color: #E51937;
-    opacity: 0.1;
-  }
-  
-
+.scheme__model-name {
+  font-weight: 600;
+  color: #e51937;
+  opacity: 0.1;
+}
 
 @media (min-width: 1024px) {
   .feature {
-    height: 900px;
+    /* height: 900px; */
     display: grid;
-    grid-template-columns: 2fr 1fr;  
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .feature__big {
+    background: url("./pic/panel-moddle.png") no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+    height: 750px;
+    display: block;
+  }
+
+  .feature__picture {
+    width: 119%;
+    /* display: block; */
+    /* height: 750px; */
+}
+
+  .feature__panel {
+    display: block;
   }
 
   .feature__background {
-    background: url("./pic/panel-big.png") no-repeat;
-    background-position: bottom left;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .about-model {
@@ -405,7 +420,8 @@ h1 {
   }
 
   .know-more {
-    margin-right: 31px;
+    margin-right: 26px;
+    width: max-content;
   }
 
   .know-more__text {
@@ -422,6 +438,111 @@ h1 {
     font-size: 13px;
     line-height: 16px;
   }
+
+  /* Стили для третьей секции safety для десктопа */
+
+  .safety {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .scheme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .picture {
+    width: auto;
+    display: block;
+  }
+
+  .picture__scheme {
+    width: 110%;
+    position: relative;
+    bottom: 110px;
+    right: 115px;
+  }
+
+  .scheme__model-name {
+    font-size: 13vw;
+    line-height: 170px;
+    padding: 14% 0 0 13%;
+    width: 200%;
+  }
+
+  .safety-info {
+    padding: 51px 51px 50px 56px;
+  }
+
+  .description.mod .description__title {
+    margin-bottom: 13px;
+  }
+
+  .description.mod {
+    margin-bottom: 56px;
+  }
+
+  .grade .description__title {
+    margin-bottom: 26px;
+  }
+
+  .grade__name {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-right: 33px;
+  }
+
+  .grade__name span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .grade__mark {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .grade__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9px;
+  }
+
+  .summary-grade {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 57px;
+  }
+
+  .summary-grade__title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 42px;
+  }
+
+  .summary-grade__subtitle {
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .summary-grade__icon {
+    margin-right: 23px;
+  }
+
+  .grade {
+    margin-bottom: 97px;
+  }
+
+  .more {
+    justify-content: flex-start;
+  }
+
 }
 
 @media (max-width: 1023px) {
@@ -445,7 +566,7 @@ h1 {
 
   .top {
     padding-left: 16px;
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 
   .top__header {
@@ -518,12 +639,6 @@ h1 {
     line-height: 20px;
   }
 
-  .model-name {
-    text-align: right;
-    padding: 9px 30px 0 0;
-  }
-
-
 
   /* Стили для второй секции feature для планшета */
 
@@ -531,41 +646,58 @@ h1 {
     padding: 55px 50px 52px 35px;
   }
 
+  .feature__big {
+    width: 100%;
+    display: block;
+  }
+
+  .model-name {
+    text-align: right;
+    padding-right: 30px;
+    position: relative;
+    top: 68px;
+    height: 70px;
+  }
+
   .about-model__top {
-      display: flex;
-      margin-bottom: 45px;
+    display: flex;
+    margin-bottom: 45px;
   }
 
   .description {
-      margin-right: 105px;
-      max-width: 506px;
+    margin-right: 105px;
+    max-width: 506px;
   }
 
   .description__title {
-      margin-bottom: 25px;
+    margin-bottom: 25px;
   }
 
   .detail__item {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .detail__title {
-      line-height: 18px;
+    line-height: 18px;
   }
 
   .detail__item:nth-child(2) {
     margin-bottom: 20px;
   }
 
+  .detail__picture.wifi {
+    padding-top: 13px;
+  }
+
   .know-more__pic {
-      width: 31px;
-      height: 31px;
-      margin-right: 12px;
+    width: 31px;
+    height: 31px;
+    margin-right: 12px;
   }
 
   .know-more {
-      padding-left: 30px;
-      margin-right: 45px;
+    padding-left: 30px;
+    margin-right: 45px;
   }
 
   .know-more__text {
@@ -573,110 +705,107 @@ h1 {
     line-height: 20px;
   }
 
+  /* Стили для третьей секции safety для планшета */
 
-/* Стили для третьей секции safety для планшета */
+  .safety {
+    flex-direction: column;
+  }
 
-.safety {
-  flex-direction: column;
+  .safety-info {
+    order: 1;
+  }
+
+  .scheme {
+    height: 538px;
+  }
+
+  .scheme__model-name {
+    font-size: 148px;
+    line-height: 180px;
+    padding: 38px 0 0 82px;
+  }
+
+  .picture__scheme {
+    position: relative;
+    bottom: 137px;
+    right: 10px;
+    width: 100%;
+    height: 78%;
+  }
+
+  .summary-grade {
+    display: none;
+  }
+
+  .safety-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 63px 20px 65px 34px;
+  }
+
+  .safety-order {
+    /* width: 100%; */
+  }
+
+  .description.mod {
+    width: 46%;
+    margin-right: 67px;
+  }
+
+  .description.mod .description__title {
+    margin-bottom: 13px;
+  }
+
+  .grade {
+    /* width: 40%; */
+  }
+
+  .grade .description__title {
+    margin-bottom: 26px;
+  }
+
+  .grade__name {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-right: 33px;
+  }
+
+  .grade__name span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .grade__mark {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grade__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9px;
+  }
+
+  .marketing {
+    margin: auto;
+  }
+
+  .safety.more {
+    padding-top: 20px;
+  }
+
+  .safety .more {
+    padding-top: 57px;
+    margin: auto;
+  }
+
+  .safety .know-more {
+    padding-left: 0;
+  }
 }
-
-.safety-info {
-  order: 1;
-}
-
-.scheme {
-  height: 538px;
-}
-
-.scheme__model-name {
-  font-size: 148px;
-  line-height: 180px;
-  padding: 38px 0 0 82px;
-}
-
-.picture__scheme {
-  position: relative;
-  bottom: 137px;
-  right: 10px;
-  width: 100%;
-  height: 78%;
-}
-
-.summary-grade {
-  display: none;
-}
-
-.safety-info {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 63px 20px 65px 34px;
-}
-
-.safety-order {
-  /* width: 100%; */
-}
-
-.description.mod {
-  width: 46%;
-  margin-right: 67px;
-}
-
-.description.mod .description__title {
-  margin-bottom: 13px;
-}
-
-.grade {
-  /* width: 40%; */
-}
-
-.grade .description__title {
-  margin-bottom: 26px;
-}
-
-.grade__name {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 21px;
-  text-transform: uppercase;
-  margin-right: 33px;
-}
-
-.grade__name span {
-  font-size: 10px;
-  line-height: 12px;
-}
-
-.grade__mark {
-  display: flex;
-  flex-direction: column;
-}
-
-.grade__item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 9px;
-}
-
-.marketing {
-  margin: auto;
-}
-
-.safety.more {
-  padding-top: 20px;
-}
-
-.safety .more {
-  padding-top: 57px;
-  margin: auto;
-}
-
-.safety .know-more {
-  padding-left: 0;
-}
-}
-
-
 
 @media (max-width: 767px) {
   .header__models {
@@ -715,7 +844,7 @@ h1 {
 
   .top {
     padding-left: 0;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
   }
 
   .top__header {
@@ -809,76 +938,84 @@ h1 {
     padding-left: 20px;
   }
 
+  /* Стили для второй секции feature для мобилки */
 
-/* Стили для второй секции feature для мобилки */
-
-.model-name {
+  .model-name {
     display: none;
-}
+  }
 
-.feature__background {
-    background: url('./pic/panel-moddle.png') no-repeat;
-    background-size: cover;
-    background-position: 38% 100%; 
-    height: 312px;
-}
+  .feature__big {
+    width: 100%;
+    display: block;
+  }
 
-.about-model__bottom, .detail {
-  display: none;
-}
+  .about-model__bottom,
+  .detail {
+    display: none;
+  }
 
-.description {
-  max-width: 100%;
-  margin-right: 0;
-}
+  .description {
+    max-width: 100%;
+    margin-right: 0;
+  }
 
-.about-model {
-  padding: 18px 10px 41px 25px;
-}
+  .about-model {
+    padding: 18px 10px 41px 25px;
+  }
 
-.about-model__top {
-  margin-bottom: 0;
-}
+  .about-model__top {
+    margin-bottom: 0;
+  }
 
-.description__title {
-  margin-bottom: 10px;
-}
+  .description__title {
+    margin-bottom: 10px;
+  }
 
+  /* Стили для третьей секции safety для мобилки */
 
+  .safety {
+    flex-direction: column;
+  }
 
-/* Стили для третьей секции safety для мобилки */
+  .safety-info {
+    order: 1;
+    padding: 18px 10px 75px 31px;
+  }
 
-.safety {
-  flex-direction: column;
-}
+  .scheme__model-name {
+    font-size: 100px;
+    line-height: 60px;
+    width: 200%;
+    padding: 0 0 0 0;
+    position: relative;
+    right: 8px;
+    top: 55px;
+  }
 
-.safety-info {
-  order:1;
-  padding: 18px 10px 75px 31px;
-}
+  .scheme {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-.scheme__model-name {
-  font-size: 100px;
-  line-height: 122px;
-  width: 200%;
-  padding-top: 25px;
-  position: relative;
-  right: 8px;
-}
+  .picture__scheme {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    /* height: 70%; */
+    padding-bottom: 27px;
+  }
 
-.scheme {
-  height: 294px;
-}
+  .grade,
+  .summary-grade,
+  .safety-order,
+  .more {
+    display: none;
+  }
 
-.picture__scheme {
-  position: relative;
-  bottom: 90px;
-  width: 100%;
-  height: 70%;
-}
-
-.grade, .summary-grade, .safety-order {
-  display: none;
-}
-
+  .description.mod {
+    width: 100%;
+    margin-right: 0;
+  }
 }
