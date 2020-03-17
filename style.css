@@ -743,10 +743,6 @@ h1 {
     padding: 63px 20px 65px 34px;
   }
 
-  .safety-order {
-    /* width: 100%; */
-  }
-
   .description.mod {
     width: 46%;
     margin-right: 67px;
@@ -754,10 +750,6 @@ h1 {
 
   .description.mod .description__title {
     margin-bottom: 13px;
-  }
-
-  .grade {
-    /* width: 40%; */
   }
 
   .grade .description__title {
