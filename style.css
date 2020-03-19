@@ -1,454 +1,1010 @@
-.feature, .safety {
-    display: none;
-}
-
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat';
-    margin: 0;
+  font-family: "Montserrat";
+  margin: 0;
+}
+
+.content-wrapper {
+  min-width: 320px;
+  max-width: 1440px;
+  margin: auto;
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
 }
-
 
 /* Стили для хэдэра */
 
 .header {
-    max-width: 100%;
-    height: 102px;
-    padding: 0 43px 0 42px;
-    margin-bottom: 31px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
+  max-width: 100%;
+  height: 102px;
+  padding: 0 43px 0 42px;
+  margin-bottom: 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
 }
 
 .header__logo {
-    margin-right: 40px;
-    display: flex;
-    align-items: center;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .header__picture {
-    display: block;
+  display: block;
 }
 
 .header__models {
-    display: flex;
-    padding-top: 5px;
+  display: flex;
+  padding-top: 5px;
 }
 
 .header__menu {
-    display: flex;
+  display: flex;
 }
 
 .header__item {
-    display: block;
+  display: block;
 }
 
 .header__item.one {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .header__item.two {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .header__model {
-    display: block;
-    height: 26px;
-    max-width: 100%;
-    margin-right: 37px;
+  display: block;
+  height: 26px;
+  max-width: 100%;
+  margin-right: 37px;
 }
 
 .header__model.one {
-    color: #E51937;
-    background: url('./pic/line.png') no-repeat;
-    background-position: bottom;
+  color: #e51937;
+  background: url("./pic/line.png") no-repeat;
+  background-position: bottom;
 }
-
 
 /* Стили для первой секции top */
 
 .top {
-    padding-left: 16px;
+  padding-left: 16px;
+  margin-bottom: 34px;
 }
 
 .top__header {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .top__title {
-    font-weight: 600;
-    font-size: 90px;
-    line-height: 110px;
-    text-align: center;
+  font-weight: 600;
+  font-size: 90px;
+  line-height: 110px;
+  text-align: center;
 }
 
 .top__slogan {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    margin: 0;
-    padding-top: 0;
-}
-
-.picture {
-    margin: auto;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  margin: 0;
+  padding-top: 0;
 }
 
 .picture__tesla {
-    display: block;
-    margin: auto;
-    width: 100%;
-    margin-bottom: 37px;
+  display: block;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 37px;
 }
 
 .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 23px;
 }
 
 .row__about {
-    display: flex;
-    justify-content: center;
-    margin-right: 105px;
+  display: flex;
+  justify-content: center;
+  margin-right: 105px;
 }
 
 .row__order {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .info {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .info.one {
-    margin-right: 80px;
-
+  margin-right: 80px;
 }
 
 .info__picture.time {
-    width: 46px;
-    height: 34px;
-    padding: 15px 4px 0 0;
-    margin-right: 15px;
-    background: url('./pic/time.png') no-repeat;
-} 
+  width: 46px;
+  height: 34px;
+  padding: 15px 4px 0 0;
+  margin-right: 15px;
+  background: url("./pic/time.png") no-repeat;
+}
 
 .info__picture.path {
-    background: url('./pic/path.png') no-repeat;
-    width: 26px;
-    height: 62px;
-    padding-right: 12px;
-    margin-right: 10px;
+  background: url("./pic/path.png") no-repeat;
+  width: 26px;
+  height: 62px;
+  padding-right: 12px;
+  margin-right: 10px;
 }
 
 .info__title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .info__title span {
-    font-size: 35px;
-    line-height: 43px;
+  font-size: 35px;
+  line-height: 43px;
 }
 
 .info__text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .marketing {
-    display: flex;
-    padding-bottom: 12px;
+  display: flex;
+  padding-bottom: 12px;
 }
 
 .test-drive {
-    margin-right: 45px;
-    display: flex;
-    align-items: center;
+  margin-right: 45px;
+  display: flex;
+  align-items: center;
 }
 
 .test-drive__icon {
-    background: url('./pic/steering-wheel.png');
-    margin-right: 7px;
-    display: block;
-    width: 22px;
-    height: 22px;
+  background: url("./pic/steering-wheel.png");
+  margin-right: 7px;
+  display: block;
+  width: 22px;
+  height: 22px;
 }
 
 .test-drive__text {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 16px;
-    text-align: center;
-    text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .order-button {
-    width: 160px;
-    height: 40px;
-    background: #fff;
-    border: 2px solid #E51937;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: #E51937;
+  width: 160px;
+  height: 40px;
+  background: #fff;
+  border: 2px solid #e51937;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #e51937;
 }
 
 .arrow__icon {
+  display: block;
+  margin: auto;
+}
+
+/* Стили для 2 секции feature */
+
+.feature {
+  margin: auto;
+}
+
+
+.feature__picture {
+  width: 100%;
+  display: block;
+}
+
+.model-name {
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 85px;
+  color: #e51937;
+}
+
+.about-model {
+  background: #e51937;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.description__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.description__text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.detail__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.detail__title span {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 43px;
+}
+
+.detail__text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.marketing__button {
+  width: 220px;
+  height: 55px;
+  border: 2px solid #fff;
+  background: #e51937;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.know-more {
+  color: #fff;
+  margin-right: 31px;
+  display: flex;
+  align-items: center;
+}
+
+.know-more__text {
+  color: #fff;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 0px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail__item {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.detail__picture {
+  padding-top: 10px;
+  margin-right: 22px;
+  width: 36px;
+  height: 52px;
+}
+
+.detail__picture.wifi {
+  width: 44px;
+  height: 34px;
+  padding-top: 20px;
+  margin-right: 16px;
+}
+
+.more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Общие стили для секции safety */
+
+.safety {
+  display: flex;
+}
+
+.safety-info {
+  background: #e51937;
+  color: white;
+}
+
+.scheme__model-name {
+  font-weight: 600;
+  color: #e51937;
+  opacity: 0.1;
+}
+
+@media (min-width: 1024px) {
+  .feature {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .feature__big {
+    background: url("./pic/panel-moddle.png") no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+    height: 750px;
     display: block;
+  }
+
+  .feature__picture {
+    width: 119%;
+}
+
+  .feature__panel {
+    display: block;
+  }
+
+  .feature__background {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .about-model {
+    min-width: 350px;
+    padding: 51px 18px 63px 50px;
+    justify-content: space-between;
+  }
+
+  .model-name {
+    padding: 65px 0 0 80px;
+  }
+
+  .description {
+    margin-bottom: 80px;
+  }
+
+  .description__title {
+    margin-bottom: 12px;
+  }
+
+  .detail__item:nth-child(2) {
+    margin-bottom: 27px;
+  }
+
+  .detail__title {
+    width: 173px;
+  }
+
+  .detail__text.special {
+    padding-top: 5px;
+  }
+
+  .marketing.test-drive__text {
+    color: #fff;
+  }
+
+  .know-more {
+    margin-right: 26px;
+    width: max-content;
+  }
+
+  .know-more__text {
+    margin-right: 0px;
+  }
+
+  .know-more__pic {
+    margin-right: 10px;
+  }
+
+  .marketing__button {
+    width: 160px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  /* Стили для третьей секции safety для десктопа */
+
+  .safety {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .scheme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .picture {
+    width: auto;
+    display: block;
+  }
+
+  .picture__scheme {
+    width: 110%;
+    position: relative;
+    bottom: 110px;
+    right: 115px;
+  }
+
+  .scheme__model-name {
+    font-size: 13vw;
+    line-height: 170px;
+    padding: 14% 0 0 13%;
+    width: 100%;
+  }
+
+  .safety-info {
+    padding: 51px 51px 50px 56px;
+  }
+
+  .description.mod .description__title {
+    margin-bottom: 13px;
+  }
+
+  .description.mod {
+    margin-bottom: 56px;
+  }
+
+  .grade .description__title {
+    margin-bottom: 26px;
+  }
+
+  .grade__name {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-right: 33px;
+  }
+
+  .grade__name span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .grade__mark {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .grade__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9px;
+  }
+
+  .summary-grade {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 57px;
+  }
+
+  .summary-grade__title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 42px;
+  }
+
+  .summary-grade__subtitle {
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .summary-grade__icon {
+    margin-right: 23px;
+  }
+
+  .grade {
+    margin-bottom: 97px;
+  }
+
+  .more {
+    justify-content: flex-start;
+  }
+
+}
+
+@media (max-width: 1023px) {
+  .header__models {
+    display: none;
+  }
+
+  .header__item {
+    display: none;
+  }
+
+  .header {
+    padding: 0 33px 0 15px;
+    margin-bottom: 53px;
+  }
+
+  .menu-burger__pic {
+    width: 35.23px;
+    height: 22.02px;
+  }
+
+  .top {
+    padding-left: 16px;
+    margin-bottom: 0;
+  }
+
+  .top__header {
+    margin-bottom: 40px;
+  }
+
+  .picture__tesla {
+    margin-bottom: 35px;
+  }
+
+  .row {
+    flex-direction: column;
+    margin-bottom: 48px;
+  }
+
+  .info__picture.path {
+    width: 44px;
+    height: 72px;
+    padding: 5px 16px 0 0;
+    margin-right: 0;
+    background: url("./pic/road.png") no-repeat;
+  }
+
+  .info__picture.time {
+    width: 66px;
+    height: 49px;
+    padding: 5px 20px 0 0;
+    margin-right: 0;
+    background: url("./pic/speed.png") no-repeat;
+  }
+
+  .info__title span {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .row__about {
+    margin: 0 15px 58px 0;
+  }
+
+  .info.one {
+    margin-right: 90px;
+  }
+
+  .test-drive {
+    margin-right: 40px;
+  }
+
+  .test-drive__text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #e51937;
+    padding-top: 4px;
+  }
+
+  .test-drive__icon {
+    width: 32px;
+    height: 32px;
+    background: url("./pic/wheel_red.png");
+    color: #e51937;
+    margin-right: 15px;
+  }
+
+  .order-button {
+    width: 220px;
+    height: 55px;
+    background: #e51937;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+
+  /* Стили для второй секции feature для планшета */
+
+  .about-model {
+    padding: 55px 50px 52px 35px;
+  }
+
+  .feature__big {
+    width: 100%;
+    display: block;
+  }
+
+  .model-name {
+    text-align: right;
+    padding-right: 30px;
+    position: relative;
+    top: 68px;
+    height: 70px;
+  }
+
+  .about-model__top {
+    display: flex;
+    margin-bottom: 45px;
+  }
+
+  .description {
+    margin-right: 105px;
+    max-width: 506px;
+  }
+
+  .description__title {
+    margin-bottom: 25px;
+  }
+
+  .detail__item {
+    margin-bottom: 30px;
+  }
+
+  .detail__title {
+    line-height: 18px;
+  }
+
+  .detail__item:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  .detail__picture.wifi {
+    padding-top: 13px;
+  }
+
+  .know-more__pic {
+    width: 31px;
+    height: 31px;
+    margin-right: 12px;
+  }
+
+  .know-more {
+    padding-left: 30px;
+    margin-right: 45px;
+  }
+
+  .know-more__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  /* Стили для третьей секции safety для планшета */
+
+  .safety {
+    flex-direction: column;
+  }
+
+  .safety-info {
+    order: 1;
+  }
+
+  .scheme {
+    height: 538px;
+  }
+
+  .scheme__model-name {
+    font-size: 148px;
+    line-height: 180px;
+    padding: 38px 0 0 82px;
+  }
+
+  .picture__scheme {
+    position: relative;
+    bottom: 137px;
+    right: 10px;
+    width: 100%;
+    height: 78%;
+  }
+
+  .summary-grade {
+    display: none;
+  }
+
+  .safety-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 63px 20px 65px 34px;
+  }
+
+  .description.mod {
+    width: 46%;
+    margin-right: 67px;
+  }
+
+  .description.mod .description__title {
+    margin-bottom: 13px;
+  }
+
+  .grade .description__title {
+    margin-bottom: 26px;
+  }
+
+  .grade__name {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-right: 33px;
+  }
+
+  .grade__name span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .grade__mark {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grade__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9px;
+  }
+
+  .marketing {
     margin: auto;
+  }
+
+  .safety.more {
+    padding-top: 20px;
+  }
+
+  .safety .more {
+    padding-top: 57px;
+    margin: auto;
+  }
+
+  .safety .know-more {
+    padding-left: 0;
+  }
 }
 
+@media (max-width: 767px) {
+  .header__models {
+    display: none;
+  }
 
+  .header__item {
+    display: none;
+  }
 
-@media (max-width:1023px) {
-    .header__models {
-        display: none;
-    }
+  .header__picture {
+    width: 138px;
+    height: 42px;
+  }
 
-    .header__item {
-        display: none;
-    }
+  .menu-burger {
+    width: 24px;
+    height: 15px;
+  }
 
-    .header {
-        padding: 0 33px 0 15px;
-        margin-bottom: 53px;
-    }
+  .menu-burger__pic {
+    width: 24px;
+    height: 15px;
+  }
 
-    .menu-burger__pic {
-        width: 35.23px;
-        height: 22.02px;
-    }
-   
-    .top {
-        padding-left: 16px;
-    }
+  .header {
+    height: 51px;
+    padding: 0 20px 0 2px;
+    margin-bottom: 25px;
+  }
 
-    .top__header {
-        margin-bottom: 40px;
-    }
+  .top__title {
+    font-size: 50px;
+    line-height: 61px;
+  }
 
-    .picture__tesla {
-        margin-bottom: 35px;
-    }
+  .top {
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
 
-    .row {
-        flex-direction: column;
-        margin-bottom: 48px;
-    }
+  .top__header {
+    margin-bottom: 45px;
+    padding-left: 18px;
+  }
 
-    .info__picture.path {
-        width: 44px;
-        height: 72px;
-        padding: 5px 16px 0 0;
-        margin-right: 0;
-        background: url('./pic/road.png') no-repeat;
-    }
+  .top__slogan {
+    font-size: 10px;
+    line-height: 12px;
+  }
 
-    .info__picture.time {
-        width: 66px;
-        height: 49px;
-        padding: 5px 20px 0 0;
-        margin-right: 0;
-        background: url('./pic/speed.png') no-repeat;
-    } 
-    
-    .info__title span {
-        font-size: 50px;
-        line-height: 61px;
-    }
+  .picture__tesla {
+    margin-bottom: 22px;
+  }
 
-    .row__about {
-        margin: 0 15px 58px 0;
-    }
+  .info__picture.time {
+    width: 38px;
+    height: 28px;
+    padding-right: 15px;
+    padding-top: 0;
+    background: url("./pic/small_time.png") no-repeat;
+  }
 
-    .info.one {
-        margin-right: 90px;
-    }
+  .info__picture.path {
+    width: 26px;
+    height: 41px;
+    padding: 0 10px 0 0;
+    background: url("./pic/small_path.png") no-repeat;
+  }
 
-    .test-drive {
-        margin-right: 40px;
-    }
+  .info__title span {
+    font-size: 27px;
+    line-height: 33px;
+  }
 
-    .test-drive__text {
-        font-size: 16px;
-        line-height: 20px;
-        color: #E51937;
-        padding-top: 4px;
-    }
+  .info__title {
+    font-size: 15px;
+    line-height: 18px;
+    padding-top: 4px;
+  }
 
-    .test-drive__icon {
-        width: 32px;
-        height: 32px;
-        background: url('./pic/wheel_red.png');
-        color: #E51937;
-        margin-right: 15px;
-    }
+  .info__text {
+    font-size: 10px;
+    line-height: 12px;
+  }
 
-    .order-button {
-        width: 220px;
-        height: 55px;
-        background: #E51937;
-        color: #fff;
-        font-size: 16px;
-        line-height: 20px;
-    }
-}
+  .info.one {
+    margin-right: 35px;
+  }
 
-@media (max-width:767px) {
-    .header__models {
-        display: none;
-    }
+  .order-button {
+    width: 140px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 16px;
+  }
 
-    .header__item {
-        display: none;
-    }
+  .test-drive__text {
+    font-size: 13px;
+    line-height: 16px;
+    padding-top: 0;
+  }
 
-    .header__picture {
-        width: 138px;
-        height: 42px;
-    }
+  .test-drive__icon {
+    width: 23px;
+    height: 22px;
+    background: url("./pic/small_wheel.png") no-repeat;
+    margin-right: 7px;
+  }
 
-    .menu-burger {
-        width: 24px;
-        height: 15px;
-    }
+  .test-drive {
+    margin-right: 25px;
+  }
 
-    .menu-burger__pic {
-        width: 24px;
-        height: 15px;
-    }
+  .row__about {
+    margin-bottom: 43px;
+    padding-left: 15px;
+  }
 
-    .header {
-        height: 51px;
-        padding: 0 20px 0 2px;;
-        margin-bottom: 25px;
-    }
+  .row__order {
+    padding-left: 10px;
+  }
 
-    .top__title {
-        font-size: 50px;
-        line-height: 61px;
-    }
+  .row {
+    margin-bottom: 17px;
+    padding-left: 0;
+  }
 
-    .top {
-        padding-left: 0;
-    }
+  .arrow {
+    padding-left: 20px;
+  }
 
-    .top__header {
-        margin-bottom: 45px;
-        padding-left: 18px;
-    }
+  /* Стили для второй секции feature для мобилки */
 
-    .top__slogan {
-        font-size: 10px;
-        line-height: 12px;
-    }
+  .model-name {
+    display: none;
+  }
 
-    .picture__tesla {
-        margin-bottom: 22px;
-    }
+  .feature__big {
+    width: 100%;
+    display: block;
+  }
 
-    .info__picture.time {
-        width: 38px;
-        height: 28px;
-        padding-right: 15px;
-        padding-top: 0;
-        background: url('./pic/small_time.png') no-repeat;
-    }
+  .about-model__bottom,
+  .detail {
+    display: none;
+  }
 
-    .info__picture.path {
-        width: 26px;
-        height: 41px;
-        padding: 0 10px 0 0;
-        background: url('./pic/small_path.png') no-repeat;
-    }
+  .description {
+    max-width: 100%;
+    margin-right: 0;
+  }
 
-    .info__title span {
-        font-size: 27px;
-        line-height: 33px;
-    }
+  .about-model {
+    padding: 18px 10px 41px 25px;
+  }
 
-    .info__title {
-        font-size: 15px;
-        line-height: 18px;
-        padding-top: 4px;
-    }
+  .about-model__top {
+    margin-bottom: 0;
+  }
 
-    .info__text {
-        font-size: 10px;
-        line-height: 12px;
-    }
+  .description__title {
+    margin-bottom: 10px;
+  }
 
-    .info.one {
-        margin-right: 35px;
-    }
+  /* Стили для третьей секции safety для мобилки */
 
-    .order-button {
-        width: 140px;
-        height: 40px;
-        font-size: 13px;
-        line-height: 16px;
-    }
+  .safety {
+    flex-direction: column;
+  }
 
-    .test-drive__text {
-        font-size: 13px;
-        line-height: 16px;
-        padding-top: 0;
-    }
+  .safety-info {
+    order: 1;
+    padding: 18px 10px 75px 31px;
+  }
 
-    .test-drive__icon {
-        width: 23px;
-        height: 22px;
-        background: url('./pic/small_wheel.png') no-repeat;
-        margin-right: 7px;
-    }
+  .scheme__model-name {
+    font-size: 100px;
+    line-height: 60px;
+    width: 200%;
+    padding: 0 0 0 0;
+    position: relative;
+    right: 8px;
+    top: 55px;
+  }
 
-    .test-drive {
-        margin-right: 25px;
-    }
+  .scheme {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .row__about {
-        /* margin: 0 0 43px */
-        margin-bottom: 43px;
-        padding-left: 15px;
-    }
+  .picture__scheme {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding-bottom: 27px;
+  }
 
-    .row__order {
-        padding-left: 10px;
-    }
+  .grade,
+  .summary-grade,
+  .safety-order,
+  .more {
+    display: none;
+  }
 
-    .row {
-        margin-bottom: 17px;
-        padding-left: 0;
-    }
-
-    .arrow {
-        padding-left: 20px;
-    }
+  .description.mod {
+    width: 100%;
+    margin-right: 0;
+  }
 }
